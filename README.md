@@ -82,3 +82,6 @@ Tive dificuldade inicial para entender a estrutura do banco de dados do n8n, esp
 ---
 
 ## Demonstração
+<img src="gifs/gif1.mp4.gif" alt="Exemplo 1" width="500" />
+
+<img src="gifs/gif2.mp4.gif" alt="Exemplo 2" width="500" />
