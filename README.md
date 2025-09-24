@@ -65,20 +65,19 @@ tsconfig.json # Configuração do TypeScript
 
 ---
 
-### Dificuldades e Desafios
+# Dificuldades e Desafios
 
-#### WSL
-Tive dificuldades para rodar o Docker no Windows devido a limitações e erros do WSL. Inicialmente, estava usando o Debian na versão 1 do WSL, o que gerou incompatibilidades, erros de input/output e até corrupção da distribuição. A solução foi migrar do Debian para o Ubuntu e atualizar o WSL para a versão 2. Com isso, consegui rodar o Docker Compose de forma estável e compatível.
+## Uso do WSL no Windows
+Durante a configuração do ambiente, enfrentei dificuldades para rodar o Docker no Windows devido a limitações do WSL. Inicialmente, utilizei o Debian na versão 1 do WSL, o que gerou incompatibilidades, erros de input/output e até corrupção da distribuição. Resolvi migrando para o Ubuntu e atualizando o WSL para a versão 2, o que permitiu rodar o Docker Compose de forma estável.
 
-#### Minha primeira experiência com Docker
-Este projeto marcou minha primeira experiência prática com Docker e Docker Compose. Precisei aprender os conceitos básicos de containers, entender como o Docker isola o ambiente do sistema operacional e perceber na prática as vantagens desse isolamento para o desenvolvimento e a replicação de ambientes.
+## Aprendizado prático com Docker
+Este projeto exigiu que eu configurasse e utilizasse Docker e Docker Compose para orquestrar o ambiente do n8n. Foi necessário aprender na prática conceitos de containers, volumes e isolamento de ambiente, além de entender como o Docker facilita a replicação do ambiente de desenvolvimento.
 
-#### Cache de SVG no n8n
-Durante o projeto, ao substituir o ícone SVG do node, percebi que o n8n continuava exibindo o ícone antigo. Após diversas tentativas de solução, identifiquei que o procedimento correto era limpar o cache do navegador e reiniciar os containers, garantindo assim que o novo SVG fosse devidamente carregado pela interface do n8n.
+## Cache de SVG no n8n
+Ao substituir o ícone SVG do node, percebi que o n8n continuava exibindo o ícone antigo devido ao cache do navegador e do próprio container. A solução foi limpar o cache do navegador e reiniciar os containers, garantindo que o novo SVG fosse carregado corretamente.
 
-#### Compreensão das tabelas do Postgres
-Como nunca tinha explorado o banco de dados do n8n, tive dificuldade para entender o que era salvo em cada tabela (workflows, execuções, credenciais, etc). Portanto, configurei o PGAdmin 4 para acessar o banco Postgres do ambiente Docker Compose do n8n e usei comandos SQL para listar tabelas, consultar registros e analisar a estrutura dos dados.  
-Isso me ajudou a validar o funcionamento do node Random e a entender melhor o fluxo de dados do n8n.
+## Exploração das tabelas do Postgres
+Tive dificuldade inicial para entender a estrutura do banco de dados do n8n, especialmente sobre onde eram salvos workflows, execuções e credenciais. Para superar isso, utilizei o PGAdmin 4 para conectar ao banco Postgres do Docker Compose e rodei comandos SQL para explorar as tabelas e validar o funcionamento do node Random.
 
 ---
 
