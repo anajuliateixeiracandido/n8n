@@ -36,7 +36,11 @@ Apesar da abordagem para rodar nodes customizados localmente usando `npm link` e
 ## Como rodar o projeto
 1. Clone o repositório:
 
-2. Suba o Docker Compose:
+2. **Certifique-se de estar logado no Docker Hub:**
+   - **Via Docker Desktop:** Abra o Docker Desktop e faça login pela interface gráfica
+   - **Via terminal:** Execute `docker login` e insira suas credenciais do Docker Hub
+
+3. Suba o Docker Compose:
 docker compose up
 
 3. Acesse o n8n: http://localhost:5678
@@ -82,6 +86,10 @@ Tive dificuldade inicial para entender a estrutura do banco de dados do n8n, esp
 ---
 
 ## Demonstração
-<img src="gifs/gif1.mp4.gif" alt="Exemplo 1" width="500" />
+<img src="gifs/gif3.mp4.gif" alt="Exemplo demonstrando primeiro acesso, e adição do workflow e do nó Random" width="500" />
 
-<img src="gifs/gif2.mp4.gif" alt="Exemplo 2" width="500" />
+<img src="gifs/gif1.mp4.gif" alt="Demonstração 1 1" width="500" />
+
+<img src="gifs/gif2.mp4.gif" alt="Demonstração 2" width="500" />
+
+
